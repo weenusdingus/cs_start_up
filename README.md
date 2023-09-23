@@ -8,5 +8,7 @@ Cowboy runner 1.0 is a fun and simple runner. Gun down your enemies and run to t
 - **CSS** - Applies cool retro and western styling
 - **DB** - Stores your highests scores in the database
 - **Web socket** - Broadcasts the highest scores to other players on the leaderboards.
+  
+### Design
 
-  ### Design
+![IMG_5547](https://github.com/weenusdingus/cs_start_up/assets/118499164/12ee3270-1565-4cda-8e98-6f69724a361d)
