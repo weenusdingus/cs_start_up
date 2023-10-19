@@ -21,3 +21,12 @@ Cowboy runner 1.0 is a fun and simple runner. Gun down your enemies and run to t
 - **Login** - Input box and submit button for login.
 - **Database** - Leaderboard placeholders represent the database.
 - **WebSocket** - Realtime leaderboard updates.
+
+  ### CSS deliverable
+
+- **Header, footer, and main content body**
+- **Navigation elements** - Changed color and font for navigation elements.
+- **Responsive to window resizing** - Resizes to all devices properly.
+- **Application elements** - Used a generated color palette so the colors blend well and provide good contrast.
+- **Application text content** - Consistent fonts.
+- **Application images** - Images are placeholders but still look nice.
