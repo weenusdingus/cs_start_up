@@ -1,0 +1,95 @@
+*{
+    font-family: Pixeltype;
+    src: local(Pixeltype);
+    color: #3e3f22 !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+  }
+
+header {
+    flex: 0 55px;
+  }
+
+main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #dcd4c8;
+    padding-bottom: 50px;
+  }
+
+h1 {
+    font-size: 50pt !important;
+}
+
+p {
+    font-size: 20pt !important;
+    padding: 1em; 
+}
+
+footer {
+    flex: 0 30px;
+  }
+  
+ul {
+    flex: 1;
+    display: flex;
+    /*  overwrite Bootstrap so the menu does not wrap */
+    flex-direction: row !important;
+    list-style: none;
+    float: right;
+  }
+
+.notification {
+    flex-direction: column !important;
+    padding: 1em;
+    background: #ece3d6;
+    border: solid 2px #3e3f22;
+    margin-top:20px;
+}
+
+nav {
+    background: #a28a66;
+}
+  
+.navbar-brand {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 30pt !important;
+  }
+
+  
+ul .nav-item {
+    padding: 0 0.3em;
+    font-size: 20pt
+  }
+  
+footer {
+    float: right;
+    background: #3e3f22 !important;
+    color:#dcd4c8 !important;
+  }
+
+footer a{
+    float: right;
+    background: #3e3f22 !important;
+    color:#dcd4c8 !important;
+  }
+  
+@media (max-height: 600px) {
+    header {
+      display: none;
+    }
+    footer {
+      display: none;
+    }
+    main {
+      flex: 1 100vh;
+    }
+  }
