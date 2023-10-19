@@ -22,7 +22,7 @@ Cowboy runner 1.0 is a fun and simple runner. Gun down your enemies and run to t
 - **Database** - Leaderboard placeholders represent the database.
 - **WebSocket** - Realtime leaderboard updates.
 
-  ### CSS deliverable
+### CSS deliverable
 
 - **Header, footer, and main content body**
 - **Navigation elements** - Changed color and font for navigation elements.
