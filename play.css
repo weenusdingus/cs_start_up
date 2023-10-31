@@ -1,0 +1,134 @@
+
+:root {
+  --dark-brown: #3e3f22;
+  --light-brown: #a28a66;
+  --background: #dcd4c8;
+  --cowboy-orange: #dd9428;
+  --dark-grey: #454545;
+  --sky-blue: #76bed2;
+}
+
+* {
+  font-family: Pixeltype;
+  src: local(Pixeltype);
+  color: var(--dark-brown) !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+}
+
+header {
+  flex: 0 55px;
+}
+
+main {
+  flex: 1 calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  background-color: var(--background);
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-size: 50pt !important;
+}
+
+p {
+  font-size: 20pt !important;
+  padding: 1em; 
+}
+
+footer {
+  flex: 0 30px;
+}
+  
+ul {
+  flex: 1;
+  display: flex;
+  flex-direction: row !important;
+  list-style: none;
+  float: right;
+}
+
+.players {
+  flex: 1;
+  max-width: 25%;
+  max-height: 10%;
+  padding-left: 0.5em;
+  font-size: 20pt;
+  position: absolute;
+  top: 115px;
+}
+
+.player-name {
+  color: var(--sky-blue);
+}
+
+#player-messages {
+  padding-left: 0.5em;
+  opacity: 0.7;
+  max-width: 10%;
+  display: inline;
+  float: left;
+  position: absolute;
+  top: 150px;
+}
+
+.event {
+  color: var(--dark-grey);
+}
+
+.player-event {
+  color: var(--sky-blue);
+}
+
+.system-event {
+  color: var(--cowboy-orange);
+}
+
+nav {
+  background: var(--light-brown);
+}
+
+.center {
+  padding-left: 500px;
+}
+.navbar-brand {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 30pt !important;
+}
+
+ul .nav-item {
+  padding: 0 0.3em;
+  font-size: 20pt
+}
+
+footer {
+  float: right;
+  background: var(--dark-brown) !important;
+  color:var(--background) !important;
+}
+
+footer a {
+  float: right;
+  background: var(--dark-brown) !important;
+  color:var(--background) !important;
+}
+
+@media (max-height: 600px) {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  main {
+    flex: 1 100vh;
+  }
+}

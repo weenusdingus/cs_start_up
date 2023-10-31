@@ -1,0 +1,64 @@
+
+:root {
+    --dark-brown: #3e3f22;
+    --light-brown: #a28a66;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border:1px solid var(--dark-brown);
+    align-self: center;
+    position: absolute;
+}
+
+#instructions{
+    top: 125px;
+    align-self: center;
+    position: absolute;
+}
+
+#scores {
+    top: 150px;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    align-self: center;
+}
+
+#start-button {
+    position: absolute;
+    top:220px;
+    left: 47%;
+}
+
+#character {
+    width: 55px;
+    height: 100px;
+    position: relative;
+    top: 99px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% {top: 99px;}
+    30% {top: 49px;}
+    70% {top: 49px;}
+    100% {top: 99px;}
+}
+
+#block {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 69px;
+    left: 470px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 470px;}
+    100%{left:-10px;}
+}

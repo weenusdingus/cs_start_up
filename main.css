@@ -15,13 +15,13 @@ header {
   }
 
 main {
-    flex: 1 calc(100vh - 110px);
+    flex: 1 calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background: #dcd4c8;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
 h1 {
@@ -80,6 +80,7 @@ footer a{
     float: right;
     background: #3e3f22 !important;
     color:#dcd4c8 !important;
+    
   }
   
 @media (max-height: 600px) {
