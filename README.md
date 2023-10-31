@@ -30,3 +30,10 @@ Cowboy runner 1.0 is a fun and simple runner. Gun down your enemies and run to t
 - **Application elements** - Used a generated color palette so the colors blend well and provide good contrast.
 - **Application text content** - Consistent fonts.
 - **Application images** - Images are placeholders but still look nice.
+
+### Login deliverable
+
+- **User registration** - Supports creating an account in the future.
+- **existing user** - Stores the username to the data base for future use.
+- **Web socket** - Supports future websocket funcionality by giving live updates.
+- **Interaction logic and design** - The game is clean and funcional and allows for future upgrades.
