@@ -2,12 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Play</title>
     <link rel="icon" href="cowboyhat.png" />
     
     <link rel="stylesheet" href="play.css" />
-    <link rel="stylesheet" href="style.css" />d
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+
+        user-select: none;
+        touch-action: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      }
+      canvas {
+        border: 0.1px solid grey;
+      }
+      a {
+        color: rgb(161, 157, 157);
+      }
+      .links {
+        margin-bottom: 20px;
+        font-weight: normal;
+        font-size: 1.2em;
+      }
+      .separator {
+        color: grey;
+      }
+    </style>
+    <script src="realGame.js" defer type="module"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,6 +56,7 @@
     />
   </head>
   <body>
+
     <header class="container-fluid">
       <nav class="navbar fixed-top">
         <a class="navbar-brand" href="#">Cowboy Runner</a>
@@ -26,17 +67,10 @@
               <a class="nav-link" href="play.html">Play</a></li>
             <li class="nav-item">
               <a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a></li>
           </ul>
       </nav>
     </header>
       <main>
-        <div>
-          <audio id="song">
-            <source src="pixel-perfect.mp3" type="audio/mpeg" />
-          </audio>
-        </div>
         <div class="players">
           Player:
           <span class="player-name"></span>
@@ -47,35 +81,12 @@
           <div class="event"><span class="system-event">game</span> connected</div>
         </div>
 
-        <div id="instructions">Hit space to jump.</div>
-
-        <div id="scores">
-          <div>
-            Score: <span id="score">0</span>
-          </div>
-          <div>
-            PR: <span id="pr">0</span>
-          </div>
-        </div>
-
-        <div>
-          <button id="start-button" onclick="window.location.reload();">Start new game</button>
-        </div>
-
-        <div id="game" tabindex="0">
-          <div id="character">
-            <img alt="cowboy-stationary" src="cowboystationary.png">
-          </div>
-          <div id="block">
-            <img alt="cactus" src="cactusblock.png">
-          </div>
-        </div>
+        <canvas id="game" defer type="module"></canvas>
       </main>
     <footer class="container-fluid">
       <span class="text-reset">Remington Bassett</span>
       <a rel="noreferrer noopener" target="_blank" href="https://github.com/weenusdingus/cs_start_up">GitHub</a>
     </footer>
-    <script src="play.js"></script>
-    <script src="game.js"></script>
+    
   </body>
 </html>
