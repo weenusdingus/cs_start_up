@@ -54,6 +54,16 @@ ul {
     margin-top:20px;
 }
 
+.quote-box {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.quote {
+  font-style: italic;
+}
+
 nav {
     background: #a28a66;
 }

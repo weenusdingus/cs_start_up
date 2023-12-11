@@ -207,11 +207,14 @@ function gameLoop(currentTime) {
     updateGameSpeed(frameTimeDelta);
     MUSIC.play()
   }
+  
 
   if (!gameOver && cactiController.collideWith(player)) {
     gameOver = true;
     setupGameReset();
+    score.score = Math.round(score.score);
     score.setHighScore();
+    score.saveScore();
     MUSIC.pause();
     MUSIC.currentTime = 0;
 
