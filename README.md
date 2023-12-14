@@ -37,3 +37,19 @@ Cowboy runner 1.0 is a fun and simple runner. Gun down your enemies and run to t
 - **existing user** - Stores the username to the data base for future use.
 - **Web socket** - Supports future websocket funcionality by giving live updates.
 - **Interaction logic and design** - The game is clean and funcional and allows for future upgrades.
+
+### Service Deliverable
+
+The scores get stored and now we have a proper leaderboard!
+
+- **Node.js/Express HTTP service** - done
+- **Static middleware for frontend** - done
+- **Calls to third party endpoints** - done
+- **Backend service endpoints** - Placeholders for loging in 
+- **Frontend calls service endpoints** - done
+
+### DB deliverable
+
+- **MongoDB Atlas database created** - done
+- **Endpoints for data** - sends data to mongo
+- **Stores data in MongoDB** - done
