@@ -44,6 +44,12 @@ The scores get stored and now we have a proper leaderboard!
 
 - **Node.js/Express HTTP service** - done
 - **Static middleware for frontend** - done
-- **Calls to third party endpoints** - don
+- **Calls to third party endpoints** - done
 - **Backend service endpoints** - Placeholders for loging in 
 - **Frontend calls service endpoints** - done
+
+### DB deliverable
+
+- **MongoDB Atlas database created** - done
+- **Endpoints for data** - sends data to mongo
+- **Stores data in MongoDB** - done
