@@ -53,3 +53,12 @@ The scores get stored and now we have a proper leaderboard!
 - **MongoDB Atlas database created** - done
 - **Endpoints for data** - sends data to mongo
 - **Stores data in MongoDB** - done
+
+### Login deliverable
+
+Users can log in
+
+- **User registration** - Creates a new account in the database.
+- **existing user** - Stores the scores under the same name
+- **Use MongoDB to store credentials** - Stores both user and their votes.
+- **Restricts functionality** - You cannot vote until you have logged in. This is restricted on the frontend only. 😔
